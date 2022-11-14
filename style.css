@@ -137,6 +137,7 @@ a:active {
 .lang_list li a:hover {
   font-size: larger;
 }
+
 .proj_view_btn {
   align-items: center;
   display: flex;
@@ -154,6 +155,7 @@ a:active {
   color: black;
   background-color: white;
 }
+
 .get_CV {
   margin-top: 20px;
   background: black;
