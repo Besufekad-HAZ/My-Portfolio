@@ -70,8 +70,8 @@ body {
 .vector_image {
   background-size: contain;
   bottom: 0;
-  height: 28vh;
-  width: 100%;
+  height: auto;
+  width: 98vmin;
   background-repeat: no-repeat;
 }
 
@@ -177,4 +177,156 @@ a:active {
 
 .get_CV i {
   margin-left: 15px;
+}
+
+.all_info_containers {
+  color: white;
+  padding: 70px;
+  margin-top: 40px;
+  height: 12.5rem;
+}
+
+.all_info_containers h4 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.all_info_containers li {
+  margin-left: 22px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+}
+
+#langs_box {
+  background: #1c528a;
+  background-image: url(img/hash.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#frame_box {
+  background: #e2505c;
+  background-image: url(img/groupbox.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+#skill_box {
+  background: #febf52;
+  background-image: url(img/ic_skills.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-size: contain;
+  width: auto;
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(img/image_geometry_1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8vh;
+}
+
+#footer_abt {
+  width: 90vw;
+  margin-left: 7px;
+}
+
+/* form section */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 0 16px 30px 16px;
+}
+
+.form .about_me {
+  margin: 20px 0 30px 0;
+}
+
+.form_collab {
+  margin-left: 11px;
+  margin-right: 8px;
+}
+
+.form_input {
+  overflow: hidden;
+  width: 100%;
+  height: 7vh;
+}
+
+.list_forms .form_input {
+  background: #fff;
+  margin: 8px 0;
+  list-style: none;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+}
+
+label {
+  color: #7e7d84;
+  padding: 5px 20px 10px 12px;
+  font-size: 10px;
+}
+
+input,
+label {
+  display: block;
+  width: 85vw;
+  border: none;
+  list-style: none;
+}
+
+textarea {
+  padding: 10px 10px 30px 15px;
+  resize: none;
+  height: 112px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+}
+
+input,
+textarea:focus {
+  color: #1a2236;
+  font-size: 14px;
+  outline: none;
+}
+
+.name_email li {
+  list-style: none;
+}
+
+.footer_social {
+  background: #1a2236;
+  color: white;
+  padding: 32px 0;
+}
+
+.footer_social p {
+  color: #92dcdc;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: -5px;
+}
+
+.icons_media {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 10px 30px 10px 20px;
 }
