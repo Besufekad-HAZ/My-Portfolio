@@ -29,8 +29,8 @@
     <title>Besufekad's Personal Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <nav>
+    <header class="container_nav">
+      <nav class="header">
         <div class="mobile_menu" onclick="myFunction()" class="dropdown-btn">
           <div class="drop-btn-menu">
             <a href="#"
@@ -40,16 +40,17 @@
         </div>
         <div class="desktop_menu">
           <ul>
-            <li><a href="#Hello">Hello</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a class="nv" href="#Hello">Hello</a></li>
+            <li><a class="nv" href="#Portfolio">Portfolio</a></li>
+            <li><a class="nv" href="#About">About</a></li>
+            <li><a class="nv" href="#Contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <section class="personal-info">
+      <section class="personal-info" id="desk_info_struc">
+        <div class="about_desk">
         <h1 class="my_name">
           Besufekad <br />
           Alemu
@@ -60,29 +61,31 @@
           you see and have a project you need coded, don't hesitate and contact
           me.
         </p>
-        <button class="start_collab" type="button">Start collaboration</button>
+        <button class="start_collab" type="button">Start collaboration</button>  
+      </div>
+       <div>
+       <img class="desk_vector"src="/My-Portfolio/img/image-geometry_1 large.png" alt="vector image">
+       </div>
       </section>
+
       <div>
-        <img
-          class="vector_image"
-          src="/My-Portfolio/img/1st vec image.svg"
+        <img class="vector_image" src="/My-Portfolio/img/1st vec image.svg"
           alt="vector image"
         />
       </div>
-
+      
       <section class="All_Projects">
-       
+    
         <div class="Project_1st">
-          <div class="Project_1st_name">
-            <h2 class="my_name">Projects</h2>
-          </div>
 
-          <div class="project_list">
-            <img
-              class="proj_1st_image"
-              src="img/Work 1.png"
-              alt="1st project image"
-            />
+          <div class="Project_1st_name">
+
+            <h2 class="my_name" id="rotate_proj">Projects</h2>
+          </div>
+          
+          
+          <div class="project_list" id="list1">
+            <img class="proj_1st_image" src="img/Work 1.png" alt="1st project image"/>
             <div class="proj_list_container">
               <h4 class="proj_name">Project name goes here</h4>
                <ul class="lang_list">
@@ -95,8 +98,14 @@
               </button>
             </div>
           </div>
+          </div>
 
-          <div class="project_list">
+
+
+         <div class="pair_container">
+
+
+          <div class="project_list" id="list2">
             <img
               class="proj_1st_image"
               src="img/Work 2.png"
@@ -113,8 +122,9 @@
                 See this Project <i class="fa fa-arrow-right"></i>
               </button>
             </div>
+            </div>
 
-            <div class="project_list">
+            <div class="project_list" id="list3">
               <img
                 class="proj_1st_image"
                 src="img/Work 3.png"
@@ -132,8 +142,12 @@
                 </button>
               </div>
             </div>
+          </div>
 
-             <div class="project_list">
+
+            <div class="align_proj_4n5">
+
+             <div class="project_list" id="list4">
               <img
                 class="proj_1st_image"
                 src="img/Work 4.png"
@@ -151,9 +165,10 @@
                 </button>
               </div>
             </div>
+            
 
 
-            <div class="project_list">
+            <div class="project_list" id="list-5">
               <img
                 class="proj_1st_image"
                 src="img/Work 5.png"
@@ -171,9 +186,11 @@
                 </button>
               </div>
             </div>
+            </div>
 
-
-            <div class="project_list">
+            <div class="final_proj">
+            <div class="backg_fin"></div>
+            <div class="project_list" id="list 6">
               <img
                 class="proj_1st_image"
                 src="img/Work 6.png"
@@ -192,8 +209,10 @@
               </div>
             </div>
           </div>
-        </div>
       </section>
+
+
+
 
        <section class="personal-info">
       <div class="more_infor">
