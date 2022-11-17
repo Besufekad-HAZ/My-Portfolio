@@ -49,15 +49,18 @@ body {
   animation: blinker 2s linear infinite;
   width: 3rem;
   margin-top: 25px;
-  margin
 }
 
 @keyframes blinker {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes blin {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 #links {
