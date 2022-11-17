@@ -10,6 +10,7 @@ This Project is a mobile portfolio setup
 
 - HTML
 - CSS
+- Javascript
 
 ## Live Demo (if available)
 

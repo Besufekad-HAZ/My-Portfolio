@@ -31,13 +31,24 @@
   <body>
     <header class="container_nav">
       <nav class="header">
-        <div class="mobile_menu" onclick="myFunction()" class="dropdown-btn">
-          <div class="drop-btn-menu">
-            <a href="#"
-              ><img class="menu_img" src="img/ic_menu.jpg" alt="top vector image"/>
+        
+        <div class="mobile_menu">
+          <div class="ham_menu" id="">
+            <a href="#">
+              <img class="menu_img" src="img/ic_menu.jpg" alt="top vector image"/>
             </a>
           </div>
+          <div id="links">
+            <ul>
+             <li><a class="nv" href="#Hello">Hello</a></li>
+            <li><a class="nv" href="#Portfolio">Portfolio</a></li>
+            <li><a class="nv" href="#About">About</a></li>
+            <li><a class="nv" href="#Contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
+
+
         <div class="desktop_menu">
           <ul>
             <li><a class="nv" href="#Hello">Hello</a></li>
@@ -49,7 +60,8 @@
       </nav>
     </header>
     <main>
-      <section class="personal-info" id="desk_info_struc">
+      <section class="personal-info" id="Hello">
+        <div id="desk_info_struc">
         <div class="about_desk">
         <h1 class="my_name">
           Besufekad <br />
@@ -63,8 +75,8 @@
         </p>
         <button class="start_collab" type="button">Start collaboration</button>  
       </div>
-       <div>
-       <img class="desk_vector"src="/My-Portfolio/img/image-geometry_1 large.png" alt="vector image">
+      <div class="desk_vector_sec">
+       </div>
        </div>
       </section>
 
@@ -74,7 +86,7 @@
         />
       </div>
       
-      <section class="All_Projects">
+      <section class="All_Projects" id="Portfolio">
     
         <div class="Project_1st">
 
@@ -127,6 +139,7 @@
             <div class="project_list" id="list3">
               <img
                 class="proj_1st_image"
+                id="3work_img"
                 src="img/Work 3.png"
                 alt="3rd project image"
               />
@@ -190,7 +203,7 @@
 
             <div class="final_proj">
             <div class="backg_fin"></div>
-            <div class="project_list" id="list 6">
+            <div class="project_list" id="list-6">
               <img
                 class="proj_1st_image"
                 src="img/Work 6.png"
@@ -214,20 +227,20 @@
 
 
 
-       <section class="personal-info">
+       <section class="personal-info" id="About_sec">
       <div class="more_infor">
         <h2 class="my_name">About</h2>
-        <p class="about_me">
+        <p class="about_me" id="last_info">
            I can help you build a product , feature or website Look through some of my work and experience! 
            If you like what you see and have a project you need coded, don't hestiate to contact me.
         </p>
 
-        <button class="get_CV" type="button">
+        <button class="get_CV" id="gett_cv" type="button">
            Get my CV <i class="material-symbols-outlined">download</i>
         </button>
       </div>
 
-  <div class="la_fr_sk">
+  <div class="lan_grid">
     <div class="all_info_containers" id="langs_box">
           <h4>Languages</h4>
           <ul>
@@ -257,35 +270,33 @@
             <li>Terminal</li>
           </ul>
         </div>
+        <div class="dot_box"></div>
       </div>
   </div>
+       </section>
     </main>
 
     <footer>
+      <section id="Contact">
       <div class="footer_nav">
       </div>
 
       <div class="form_container">
-        <div class="form">
+        <div class="form-1">
           <h3 class="my_name">Get Started</h2>
           <p class="about_me" id="footer_abt">
             If you have an application you are interested in developing, 
             a feature that you need built or a project that needs coding. 
-            I'd love to help with it 
+            I'd love to help with it. 
           </p>
 
-
-
-
-          <form class="form_collab" action="https://formspree.io/f/xknepwnz" method="POST">
+          <form class="form_collab" action="https://formspree.io/f/xaykvgeq" method="POST">
             <ul class="list_forms">
               <div class="name_email">
                 <li class="form_input">
-                  <label>Your name<input placeholder="Your Name"type="text" id="name"
-                      name="name"
-                      maxlength="30"
-                      required
-                    />
+                  <label>
+                    Your name<input placeholder="Your Name" type="text" id="name"
+                      name="name" maxlength="30" required>
                   </label>
                 </li>
                 <li class="form_input">
@@ -293,21 +304,17 @@
                     Your email
                     <input
                       placeholder="Your Email"
-                      id="mail"
-                      type="email"
-                      name="email"
-                      required
-                    />
+                      id="mail" type="email" name="email" required>
                   </label>
                 </li>
-              <li>
-                <textarea name="Enter Message" 
-                placeholder="Enter your message here..." maxlength="500" required></textarea>
+                </div>
+              <li class="txt_area">
+                <textarea name="Message input" placeholder="Enter your message here..." maxlength="500" required></textarea>
               </li>
-              <li>
-                <button class="start_collab" type="button">Start collaboration</button>
+              <li class="allign_center">
+                <button class="start_collab" id="fot" type="submit">Start collaboration</button>
               </li>
-              </div>
+              
             </ul>
           </form>
         </div>
@@ -339,8 +346,8 @@
           </li>
         </ul>
       </div>
+    </section>
     </footer>
-  </body>
-</html>
+     <script src="index.js"></script>
   </body>
 </html>
