@@ -11,7 +11,7 @@ ham_menu.addEventListener("click", () => {
 document.querySelectorAll(".nv").forEach((n) =>
   n.addEventListener("click", () => {
     ham_menu.classList.remove("active");
-    links.classList.toggle("active");
-    sec_nav.classList.toggle("active");
+    links.classlist.toggle("active");
+    sec_nav.classlist.toggle("active");
   })
 );
