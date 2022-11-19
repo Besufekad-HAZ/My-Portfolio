@@ -10,10 +10,11 @@ This Project is a mobile portfolio setup
 
 - HTML
 - CSS
+- Javascript
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Deployement Link](https://besufekad-haz.github.io/My-Portfolio/)
 
 ## Getting Started
 
