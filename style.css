@@ -9,12 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-} */
-
 .header {
   background-image: url(img/image_geometry_1.png);
   background-repeat: no-repeat;
@@ -144,10 +138,6 @@ a:active {
   left: 0;
 }
 
-/* #links {
-  display: none;
-} */
-
 .my_name {
   color: #1a2236;
   font-family: "Playfair Display", serif;
@@ -210,8 +200,6 @@ a:active {
 .project_list {
   width: 100%;
   display: grid;
-
-  /* grid-template-columns: 2fr; */
 }
 
 .proj_1st_image {
@@ -418,10 +406,6 @@ textarea:focus {
   outline: none;
 }
 
-/* .name_email li {
-  list-style: none;
-} */
-
 .footer_social {
   background: #1a2236;
   color: white;
@@ -442,8 +426,6 @@ textarea:focus {
   justify-content: space-between;
   margin: 10px 30px 10px 20px;
 }
-
-/* } */
 
 /* Big Screen Size Section */
 
@@ -490,8 +472,6 @@ textarea:focus {
     text-decoration: none;
     color: #1a2236;
     font-size: large;
-
-    /* border: 1px solid #1a2236; */
   }
 
   .nv:link {
@@ -762,9 +742,6 @@ textarea:focus {
   }
 
   #About_sec {
-    /* display: grid; */
-
-    /* grid-row: auto; */
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -849,11 +826,7 @@ textarea:focus {
 
   .name_email {
     width: 34.7vw;
-
-    /* gap: 0.7rem; */
     display: flex;
-
-    /* margin-left: -2rem; */
   }
 
   .allign_center {
