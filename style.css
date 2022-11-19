@@ -76,16 +76,18 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: -40px;
+
   /* background: url(img/ic_stackoverflow.svg) no-repeat bottom; */
 }
 
-.ham_menu2{
+.ham_menu2 {
   position: relative;
   display: flex;
   float: right;
   right: 20px;
   top: 20px;
 }
+
 .lang_list li {
   padding: 7px 10px;
   width: auto;
@@ -103,9 +105,11 @@ body {
   font-size: 1.2rem;
   line-height: 1.6em;
 }
+
 #links ul {
   padding-top: 144px;
 }
+
 #links li {
   margin: 40px 50px;
   font-size: 16px;
@@ -132,7 +136,7 @@ a:active {
   list-style: none;
   text-decoration: none;
   color: black;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
 }
 
@@ -497,11 +501,12 @@ textarea:focus {
 
   .mobile_menu {
     display: none;
-
   }
+
   .ham_menu {
     display: none;
   }
+
   .header {
     background: none;
     align-items: center;
