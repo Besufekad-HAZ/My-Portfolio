@@ -2,6 +2,7 @@ const ham_menu = document.querySelector(".ham_menu");
 const mobile_container = document.querySelector(".mobile_menu");
 const ham_menu2 = document.querySelector("#links .ham_menu2");
 const links = document.querySelector("#links");
+const new_bg = document.querySelector("#new_bg");
 
 ham_menu.addEventListener("click", () => {
     ham_menu.style.display = "none";
@@ -15,6 +16,7 @@ document.querySelectorAll(".nv").forEach((n) =>
     ham_menu.classList.remove("active");
       ham_menu.style.display = "block";
     links.classList.toggle("active");
+    new_bg.classList.toggle("active");
   })
 );
 
