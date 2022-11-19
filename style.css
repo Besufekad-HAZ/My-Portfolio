@@ -45,38 +45,47 @@ body {
 /* Hamburger Section */
 .ham_menu {
   display: block;
-  margin-right: 10px;
+  right: 10px;
+  top: 10px;
 }
 
-.ham_menu.active .bar:nth-child(2) {
+.ham_menu2 .bar:nth-child(2) {
   opacity: 0;
 }
 
-.ham_menu.active .bar:nth-child(1) {
+.ham_menu2 .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.ham_menu.active .bar:nth-child(3) {
+.ham_menu2 .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
 #links {
   position: fixed;
-  left: -100%;
-  top: 6rem;
+  left: -100vh;
   gap: 0;
   flex-direction: column;
-  width: 100%;
+  min-width: 100vw;
   text-align: center;
   align-items: center;
   transition: 0.6s;
-  height: 100%;
-  background-color: #fff;
-
-  /* background: url(img/ic_stackoverflow.svg) no-repeat bottom; */
+  min-height: 100%;
+  background-color: white;
+  background-image: url("img/menu-png-edit.png");
   background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -40px;
+  /* background: url(img/ic_stackoverflow.svg) no-repeat bottom; */
 }
 
+.ham_menu2{
+  position: relative;
+  display: flex;
+  float: right;
+  right: 20px;
+  top: 20px;
+}
 .lang_list li {
   padding: 7px 10px;
   width: auto;
@@ -94,9 +103,11 @@ body {
   font-size: 1.2rem;
   line-height: 1.6em;
 }
-
+#links ul {
+  padding-top: 144px;
+}
 #links li {
-  margin: 20px 50px;
+  margin: 40px 50px;
   font-size: 16px;
   list-style: none;
   text-decoration: none;
@@ -115,14 +126,13 @@ a:active {
 }
 
 #links a {
-  margin: 50px 100px;
+  margin: 50px auto;
   align-items: flex-start;
-  font-size: 35px;
+  font-size: 20px;
   list-style: none;
   text-decoration: none;
   color: black;
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
+  font-family: "Poppins";
   font-style: normal;
 }
 
@@ -487,8 +497,11 @@ textarea:focus {
 
   .mobile_menu {
     display: none;
-  }
 
+  }
+  .ham_menu {
+    display: none;
+  }
   .header {
     background: none;
     align-items: center;
