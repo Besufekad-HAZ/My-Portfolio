@@ -5,6 +5,7 @@
 }
 
 /* @media screen and (max-width: 768px) { */
+
 body {
   overflow-x: hidden;
 }
@@ -79,7 +80,7 @@ body {
   display: flex;
   float: right;
   right: 20px;
-  top: 20px;
+  top: -5pxpx;
 }
 
 .lang_list li {
@@ -487,6 +488,13 @@ textarea:focus {
     display: none;
   }
 
+  .ham_menu2 {
+    display: none;
+  }
+
+  #links {
+    display: none;
+  }
   .header {
     background: none;
     align-items: center;
@@ -731,8 +739,7 @@ textarea:focus {
 
   .backg_fin {
     width: 95%;
-    background:
-      url(img/image-geometry_5.svg),
+    background: url(img/image-geometry_5.svg),
       url(img/image-geometry_yellow.svg);
     background-repeat: no-repeat;
   }
@@ -812,8 +819,7 @@ textarea:focus {
   }
 
   .form_container {
-    background:
-      url(img/image-geometry_shapes1.svg) left top no-repeat,
+    background: url(img/image-geometry_shapes1.svg) left top no-repeat,
       url(img/image-geometry_shapes2.svg) right bottom no-repeat;
     background-color: #f9f9fa;
   }
