@@ -5,6 +5,7 @@
 }
 
 /* @media screen and (max-width: 768px) { */
+
 body {
   overflow-x: hidden;
 }
@@ -59,27 +60,25 @@ body {
   position: fixed;
   left: -100vh;
   gap: 0;
-  flex-direction: column;
-  min-width: 100vw;
+  width: 100vw;
   text-align: center;
   align-items: center;
   transition: 0.6s;
-  min-height: 100%;
-  background-color: white;
-  background-image: url("img/menu-png-edit.png");
-  background-size: contain;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  background-image: url("img/image_geometry_menu_top_bg.svg"), url("img/image_geometry_menu_buttom_bg.svg");
+  background-size: 80%, 97.5%;
+  background-position: top left, bottom left;
   background-repeat: no-repeat;
   margin-top: -40px;
-
-  /* background: url(img/ic_stackoverflow.svg) no-repeat bottom; */
 }
 
 .ham_menu2 {
   position: relative;
   display: flex;
   float: right;
-  right: 20px;
-  top: 20px;
+  right: 18px;
+  top: -15px;
 }
 
 .lang_list li {
@@ -101,7 +100,7 @@ body {
 }
 
 #links ul {
-  padding-top: 144px;
+  padding-top: 15rem;
 }
 
 #links li {
@@ -484,6 +483,14 @@ textarea:focus {
   }
 
   .ham_menu {
+    display: none;
+  }
+
+  .ham_menu2 {
+    display: none;
+  }
+
+  #links {
     display: none;
   }
 

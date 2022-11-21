@@ -1,10 +1,10 @@
 # Project Name
 
-Mobile first Portfolio
+Besufekad's Portfolio
 
 ## About This Project
 
-This Project is a mobile portfolio setup
+This Project is a portfolio Website
 
 ## Built With
 
@@ -29,6 +29,13 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 ### Run tests
+
+Linters Checks
+-->Lighthouse
+-->Webhint
+-->Stylelint
+-->ESLint
+-->node_modules checker
 
 ### Deployment
 
