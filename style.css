@@ -66,7 +66,9 @@ body {
   transition: 0.6s;
   height: 100vh;
   background-color: rgb(255, 255, 255);
-  background-image: url("img/image_geometry_menu_top_bg.svg"), url("img/image_geometry_menu_buttom_bg.svg");
+  background-image:
+    url("img/image_geometry_menu_top_bg.svg"),
+    url("img/image_geometry_menu_buttom_bg.svg");
   background-size: 80%, 97.5%;
   background-position: top left, bottom left;
   background-repeat: no-repeat;
@@ -424,6 +426,159 @@ textarea:focus {
   list-style: none;
   justify-content: space-between;
   margin: 10px 30px 10px 20px;
+}
+
+/* popup card section */
+
+/* .card-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  z-index: 98;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 99;
+}
+
+.card h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+  color: #1a2236;
+  margin-left: 6.25%;
+}
+
+.card img {
+  max-width: 700px;
+  width: 87.5%;
+  margin: 6.25%;
+}
+
+.card-cross {
+  align-self: flex-end;
+  font-size: 20px;
+  color: #c4c4c4;
+  width: 30px;
+  padding-top: 15px;
+  transition: 0.3s;
+}
+
+.card-cross:hover {
+  color: #1a2236;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  max-width: 350px;
+  padding: 0;
+  margin: 0 15.25% 0 6.25%;
+}
+
+.card-list li {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  border: 2px solid black;
+  font-size: 10.33px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  line-height: 80%;
+  text-align: center;
+  padding: 4px 8px;
+  margin-right: 15px;
+}
+
+#card-description {
+  max-width: 700px;
+  margin: 0 6.25%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 25px 11.5%;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+  color: #1a2236;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 2px solid #1a2236;
+  width: 100%;
+  height: 51px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.card-button:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.email_bg {
+  background-color:  red;
+  animation:blinking 2s infinite;
+}
+
+@keyframes blinking{
+0%{  color: yellow; }
+47%{  color: #000; }
+62%{  color: transparent; }
+97%{  color:transparent; }
+100%{ color: #000;  }
+} */
+
+/* Form Validation Section */
+.valid {
+  border: 1px solid limegreen;
+  border-left: 8px solid limegreen;
+  box-shadow: 0 0 5px limegreen;
+}
+
+.invalid {
+  border: 2px solid orangered;
+  box-shadow: 0 0 5px orangered;
+}
+
+.correct {
+  padding-left: 10px;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  bottom: 22px;
+}
+
+.incorrect {
+  padding-left: 10px;
+  color: rgb(255, 0, 0);
+  font-size: 15px;
+  font-weight: 200;
+  position: relative;
+  bottom: 22px;
 }
 
 /* Big Screen Size Section */

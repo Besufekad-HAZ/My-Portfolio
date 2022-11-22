@@ -30,7 +30,7 @@
   </head>
   <body>
     <header class="container_nav">
-      <nav class="nv" id="new_bg"></nav>
+      <!-- <nav class="nv" id="new_bg"></nav> -->
       <nav class="header">
         <div class="ham_menu" id="">
           <a href="#">
@@ -49,13 +49,12 @@
               </a>
             </div>
             <ul>
-             <li><a class="nv" href="#Hello">Hello</a></li>
+            <li><a class="nv" href="#Hello">Hello</a></li>
             <li><a class="nv" href="#Portfolio">Portfolio</a></li>
             <li><a class="nv" href="#About_sec">About</a></li>
             <li><a class="nv" href="#Contact">Contact</a></li>
             </ul>
           </div>
-          
         </div>
         <div class="desktop_menu">
           <ul>
@@ -198,6 +197,7 @@
             </div>
 
             <div class="final_proj">
+              
             <div class="backg_fin"></div>
             <div class="project_list" id="list-6">
               <img
@@ -218,6 +218,7 @@
               </div>
             </div>
           </div>
+          <!-- <div class="modal-overlay"></div> -->
        </section>
        <section class="personal-info" id="About_sec">
        <div class="more_infor">
@@ -265,7 +266,6 @@
           </div>
        </section>
      </main>
-
       <footer>
         <section id="Contact">
         <div class="footer_nav"> </div>
@@ -277,7 +277,7 @@
               a feature that you need built or a project that needs coding. 
               I'd love to help with it. </p>
 
-            <form class="form_collab" action="https://formspree.io/f/xaykvgeq" method="POST">
+            <form class="form_collab" action="https://formspree.io/f/xaykvgeq" method="POST" id="form_all">
               <ul class="list_forms">
                 <div class="name_email">
                   <li class="form_input">
@@ -286,18 +286,21 @@
                         name="name" maxlength="30" required>
                     </label>
                   </li>
+                  <p id="reply_name"></p> 
                   <li class="form_input">
                     <label>
                       Your email
                       <input
-                        placeholder="Your Email"
+                        placeholder="Your Email" class="email_bg"
                         id="mail" type="email" name="email" required>
                     </label>
                   </li>
+                   <p id="reply_mail"></p> 
                   </div>
                 <li class="txt_area">
-                  <textarea name="Message input" placeholder="Enter your message here..." maxlength="500" required></textarea>
+                  <textarea name="Message input" id="msg" placeholder="Enter your message here..." maxlength="500" required></textarea>
                 </li>
+                <p id="reply_message"></p> 
                 <li class="allign_center">
                   <button class="start_collab" id="fot" type="submit">Start collaboration</button>
                 </li>
@@ -335,5 +338,7 @@
       </section>
       </footer>
       <script src="index.js"></script>
+     <script src="pop-up.js"></script>
+     <script src="validate.js"></script>
   </body>
 </html>
