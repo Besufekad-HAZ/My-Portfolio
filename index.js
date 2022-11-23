@@ -25,3 +25,34 @@ ham_menu2.addEventListener("click", () => {
   ham_menu.classList.remove("active");
   links.classList.toggle("active");
 });
+
+// validation
+
+// function validation() {
+//   const form = document.getElementById("form_all");
+//   const name = form.elements.name.value;
+//   const email = form.elements.mail.value;
+//   const message = form.elements.msg.value;
+//   const msg_info = document.getElementById("error_message");
+//   msg_info.innerHTML = "";
+
+//   form.addEventListener("submit", (event) => {
+//      if ((email) !== email.toLowerCase()) {
+//        event.preventDefault();
+//        msg_info.innerHTML = "Please write your email in lower case!";
+//      }
+//     //   else if (message.length < 5) {
+//     //    event.preventDefault();
+//     //    msg_info.innerHTML = "*Please write a message";
+//     //  }
+
+//     //  else if (name.length == 0) {
+//     //    event.preventDefault();
+//     //    msg_info.innerHTML = "Please write your name";
+//     else {
+//        form.submit();
+//     }
+//   });
+// }
+
+// validation();

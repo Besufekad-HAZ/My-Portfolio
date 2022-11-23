@@ -88,7 +88,7 @@
       </section>
 
       <div>
-        <img class="vector_image" src="/img/1st vec image.svg"
+        <img class="vector_image" src="img/1st_vec.svg"
           alt="vector image"
         />
       </div>
@@ -277,31 +277,30 @@
               a feature that you need built or a project that needs coding. 
               I'd love to help with it. </p>
 
-            <form class="form_collab" action="https://formspree.io/f/xaykvgeq" method="POST" id="form_all">
+            <form class="form_collab" action="https://formspree.io/f/xknepwnz" method="POST" id="form_all">
               <ul class="list_forms">
                 <div class="name_email">
                   <li class="form_input">
                     <label>
                       Your name<input placeholder="Your Name" type="text" id="name"
-                        name="name" maxlength="30" required>
+                        name="name" maxlength="30" required pattern="([A-ZΆ-ΫÀ-ÖØ-Þ][A-ZΆ-ΫÀ-ÖØ-Þa-zά-ώß-öø-ÿ]{1,19} ?){1,10}" onchange="storeForm()">
                     </label>
                   </li>
-                  <p id="reply_name"></p> 
+                  <!-- <p id="reply_name"></p>  -->
                   <li class="form_input">
                     <label>
                       Your email
                       <input
                         placeholder="Your Email" class="email_bg"
-                        id="mail" type="email" name="email" required>
+                        id="mail" type="email" placeholder="email@domain.com" name="email" required>
                     </label>
                   </li>
-                   <p id="reply_mail"></p> 
+                   <!-- <p id="reply_mail"></p>  -->
                   </div>
                 <li class="txt_area">
                   <textarea name="Message input" id="msg" placeholder="Enter your message here..." maxlength="500" required></textarea>
                 </li>
-                <p id="success_message"></p>
-                <p id="error_message"></p>  
+                <p class="success_message" id="error_message"> </p>  
                 <li class="allign_center">
                   <button class="start_collab" id="fot" type="submit">Start collaboration</button>
                 </li>
@@ -339,7 +338,7 @@
       </section>
       </footer>
       <script src="index.js"></script>
-     <script src="pop-up.js"></script>
-     <script src="validate.js"></script>
+      <script src="pop-up.js"></script>
+      <script src="validation.js"></script>
   </body>
 </html>
