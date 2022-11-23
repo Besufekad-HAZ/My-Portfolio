@@ -1,3 +1,8 @@
+const errMsg = document.getElementById("error_message");
+const successMsg = document.getElementById("success_message");
+
+
+
 let registrationForm = document.querySelector("#form_all");
 registrationForm.addEventListener("submit", function (event) {
   if (!validateForm()) event.preventDefault();
@@ -48,7 +53,8 @@ let makeValid = (inputEl, inputFeedbackEl) => {
   inputEl.classList.remove("invalid");
   inputFeedbackEl.classList.add("correct");
   inputFeedbackEl.classList.remove("incorrect");
-  inputFeedbackEl.innerText = "Successful";
+  successMsg.textContent = "Succesfuly Submitted";
+  inputEl.classList.toggle("success_message");
 };
 
 let makeInValid = (inputEl, inputFeedbackEl) => {
@@ -56,7 +62,9 @@ let makeInValid = (inputEl, inputFeedbackEl) => {
   inputEl.classList.add("invalid");
   inputFeedbackEl.classList.remove("correct");
   inputFeedbackEl.classList.add("incorrect");
-  inputFeedbackEl.innerText = `Please Enter ${inputEl.placeholder}`;
+  errMsg.textContent = "Invalid Format!";
+  inputEl.classList.toggle("error_message");
+  preventDefault();
 };
 
 let validateForm = () => {

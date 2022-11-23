@@ -66,8 +66,7 @@ body {
   transition: 0.6s;
   height: 100vh;
   background-color: rgb(255, 255, 255);
-  background-image:
-    url("img/image_geometry_menu_top_bg.svg"),
+  background-image: url("img/image_geometry_menu_top_bg.svg"),
     url("img/image_geometry_menu_buttom_bg.svg");
   background-size: 80%, 97.5%;
   background-position: top left, bottom left;
@@ -554,14 +553,15 @@ textarea:focus {
 
 /* Form Validation Section */
 .valid {
-  border: 1px solid limegreen;
-  border-left: 8px solid limegreen;
-  box-shadow: 0 0 5px limegreen;
+  border: 1px solid rgb(0, 255, 0);
+  border-left: 2px solid rgb(0, 255, 0);
+  box-shadow: 0 0 5px rgb(0, 255, 0);
 }
 
 .invalid {
-  border: 2px solid orangered;
-  box-shadow: 0 0 5px orangered;
+  border: 2px solid rgb(255, 55, 0);
+  box-shadow: 0 0 5px rgb(255, 55, 0);
+  border-left: 2px solid rgb(255, 55, 0);
 }
 
 .correct {
@@ -893,8 +893,7 @@ textarea:focus {
 
   .backg_fin {
     width: 95%;
-    background:
-      url(img/image-geometry_5.svg),
+    background: url(img/image-geometry_5.svg),
       url(img/image-geometry_yellow.svg);
     background-repeat: no-repeat;
   }
@@ -974,8 +973,7 @@ textarea:focus {
   }
 
   .form_container {
-    background:
-      url(img/image-geometry_shapes1.svg) left top no-repeat,
+    background: url(img/image-geometry_shapes1.svg) left top no-repeat,
       url(img/image-geometry_shapes2.svg) right bottom no-repeat;
     background-color: #f9f9fa;
   }
