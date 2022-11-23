@@ -4,7 +4,7 @@ document.getElementById("form_all").addEventListener("submit", (ev) => {
   const validate = emailValue.toLowerCase();
   if (emailValue === validate) {
     emailError.textContent = "";
-    form.submit();
+    form_all.submit();
   } else {
     ev.preventDefault();
     emailError.textContent = "Please write your email in lower case!";
