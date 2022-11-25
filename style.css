@@ -906,4 +906,69 @@ textarea:focus {
     align-items: center;
     text-decoration: none;
   }
+
+  .modal-pop {
+    margin: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #1a2236;
+    position: relative;
+  }
+
+  .modal-contain {
+    background-color: white;
+    margin: 70px;
+    display: block;
+    flex-direction: column;
+    padding: 60px;
+    position: relative;
+  }
+
+   .close-btn p{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 4em;
+  }
+
+  .modal-contain h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    line-height: 80%;
+  }
+
+  .modal-contain .lang_list{
+    margin: 34px 0;
+
+  }
+
+  .modal-contain .lang_list li{
+    background-color: white;
+    border: 1px solid #7e7d84;
+    font-size: 1.5em;
+  }
+
+  .mod-desc {
+    padding: 70px;
+    max-width: 50%;
+    margin-inline: auto;
+    font-size: 18px;
+  }
+
+  .see-btns {
+    padding-top: 52px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .see-btn{
+    min-width: 155px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #7e7d84;
+    text-align: left;
+  }
 }
