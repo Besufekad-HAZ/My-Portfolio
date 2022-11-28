@@ -66,9 +66,7 @@ body {
   transition: 0.6s;
   height: 100vh;
   background-color: rgb(255, 255, 255);
-  background-image:
-    url("img/image_geometry_menu_top_bg.svg"),
-    url("img/image_geometry_menu_buttom_bg.svg");
+  background-image: url("img/image_geometry_menu_top_bg.svg"), url("img/image_geometry_menu_buttom_bg.svg");
   background-size: 80%, 97.5%;
   background-position: top left, bottom left;
   background-repeat: no-repeat;
@@ -881,36 +879,17 @@ textarea:focus {
     margin-left: 1rem;
   }
 
-  /* #list-6 .proj_list_container {
-    opacity: 90%;
-  } */
-
   .backg_fin {
     width: 95%;
-    margin-top: -2rem;
-    background:
-      url(img/image-geometry_5.svg),
-      url(img/image-geometry_yellow.svg);
+    margin-top: 2rem;
+    background: url(img/image-geometry_5.svg), url(img/image-geometry_yellow.svg);
     background-repeat: no-repeat;
-  }
-
-  /* .proj_view_btn {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    width: 29vh;
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
-    padding: 9px 20px;
-    border: 1px solid white;
-    margin-top: 10px;
   }
 
   .proj_view_btn:hover {
     color: black;
     background-color: white;
-  } */
+  }
 
   #About_sec {
     display: flex;
@@ -983,9 +962,7 @@ textarea:focus {
   }
 
   .form_container {
-    background:
-      url(img/image-geometry_shapes1.svg) left top no-repeat,
-      url(img/image-geometry_shapes2.svg) right bottom no-repeat;
+    background: url(img/image-geometry_shapes1.svg) left top no-repeat, url(img/image-geometry_shapes2.svg) right bottom no-repeat;
     background-color: #f9f9fa;
   }
 
