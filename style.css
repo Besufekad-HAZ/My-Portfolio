@@ -66,9 +66,7 @@ body {
   transition: 0.6s;
   height: 100vh;
   background-color: rgb(255, 255, 255);
-  background-image:
-    url("img/image_geometry_menu_top_bg.svg"),
-    url("img/image_geometry_menu_buttom_bg.svg");
+  background-image: url("img/image_geometry_menu_top_bg.svg"), url("img/image_geometry_menu_buttom_bg.svg");
   background-size: 80%, 97.5%;
   background-position: top left, bottom left;
   background-repeat: no-repeat;
@@ -81,6 +79,10 @@ body {
   float: right;
   right: 18px;
   top: -15px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .lang_list li {
@@ -103,6 +105,24 @@ body {
 
 #links ul {
   padding-top: 15rem;
+}
+
+.lang_list {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.modal-contain .lang_list {
+  margin: 34px 4%;
+}
+
+.modal-contain .lang_list li {
+  background-color: white;
+  border: 1px solid #7e7d84;
+  font-size: 1.5em;
 }
 
 #links li {
@@ -225,14 +245,6 @@ a:active {
   font-weight: 300;
 }
 
-.lang_list {
-  display: flex;
-  flex-direction: row;
-  font-size: 12px;
-  font-weight: 300;
-  text-decoration: none;
-}
-
 .proj_view_btn {
   align-items: center;
   display: flex;
@@ -249,6 +261,10 @@ a:active {
 .proj_view_btn:hover {
   color: black;
   background-color: white;
+}
+
+.vec-image {
+  display: none !important;
 }
 
 .get_CV {
@@ -434,6 +450,109 @@ textarea:focus {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 0.5rem;
 }
+
+/* Desktop Modal pop-up version */
+
+.modal-pop {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  z-index: 98;
+  opacity: 98%;
+}
+
+.modal-contain {
+  opacity: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 99;
+  margin-top: 2rem;
+  background-color: #fff;
+}
+
+.close-btn {
+  align-self: flex-end;
+  padding-top: 20px;
+  margin-right: 4%;
+  font-size: 4em;
+  cursor: grab;
+}
+
+.close-btn:hover {
+  color: #1a2236;
+}
+
+.modal-contain h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  line-height: 80%;
+  font-size: 5rem;
+  color: #1a2236;
+  margin-left: 4%;
+}
+
+.modal-contain img {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.mod-desc {
+  padding: 70px;
+  max-width: 50%;
+  margin-inline: auto;
+  font-size: 18px;
+}
+
+.see-btns {
+  padding-top: 52px;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.see-btns button {
+  width: 20rem;
+  height: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.see-btn {
+  /* width: 20rem; */
+  padding: 12px;
+  background-color: white;
+  border: 2px solid #1a2236;
+  text-align: left;
+}
+
+.see-btn i {
+  margin-left: 55%;
+  font-weight: bolder;
+}
+
+.see-btn:hover {
+  background-color: #1a2236;
+  color: #fff;
+}
+
+.arrows {
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 18%;
+}
+
+/* .arrows i {
+    padding: 2%;
+  } */
 
 /* Big Screen Size Section */
 
@@ -646,43 +765,54 @@ textarea:focus {
   }
 
   .pair_container {
-    width: 98vw;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 70% 30%;
   }
 
-  #list2 {
-    height: 350px;
+  #list-2 {
+    /* height: 350px;
     width: 100%;
     padding-left: 7rem;
-    position: relative;
+    position: relative; */
+
+    /* margin-top: 25rem; */
+    margin-bottom: -3px;
     background-image: url(img/image-geometry_circle\ and\ dot.svg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: top right;
+    background-size: 50%;
   }
 
-  #list2 img {
-    margin-top: 95px;
-    width: 47.5%;
-    margin-left: -6.8rem;
-    height: 16rem;
+  #list-2 img {
+    height: 30vh;
+    width: 47%;
   }
 
-  #list3 {
-    width: 55%;
+  /* .vec-image {
+  } */
+
+  /* .circle-image {
+    z-index: 99;
+  } */
+
+  #list-2 .proj_list_container {
+    /* width: 47.5%; */
+    height: 10rem;
+    margin-top: -8rem;
+    width: 45%;
+    opacity: 100%;
+    transition: ease-in-out;
   }
 
-  #list3 img {
+  #list-3 img {
     padding: 0;
     margin: 0;
-    width: 50vh;
+    width: 35vw;
+    height: 20vh;
   }
 
-  #list3 .proj_list_container {
-    width: 110%;
-    height: 195px;
-    margin-top: -250px;
-    margin-left: -25px;
+  #list-3 .proj_list_container {
+    margin-bottom: 8rem;
   }
 
   .align_proj_4n5 {
@@ -695,29 +825,43 @@ textarea:focus {
     margin-bottom: -3.4rem;
   }
 
-  #list4 {
-    margin-top: 7rem;
+  #list-4 {
+    margin-top: 8rem;
     width: 50%;
     background-image: url(img/image-geometry_merge.svg);
     background-repeat: no-repeat;
     background-position: right;
   }
 
-  #list4 img {
+  #list-4 img {
     width: 81%;
-    height: 65%;
-    margin-top: -12.3rem;
+    height: 15rem;
+    margin-top: -16rem;
     margin-left: auto;
+  }
+
+  #list-4 .proj_list_container {
+    margin-top: -20rem;
+    margin-left: 7.27rem;
+    height: 10rem;
+    opacity: 100%;
+    transition: ease-in-out;
+    width: 80%;
   }
 
   #list-5 {
     width: 52rem;
     margin-left: -1.5rem;
+    margin-top: -4.8rem;
   }
 
   #list-5 img {
     height: auto;
     min-width: auto;
+  }
+
+  #list-6 {
+    width: 60%;
   }
 
   .final_proj {
@@ -726,35 +870,25 @@ textarea:focus {
   }
 
   .final_proj #list-6 {
-    margin-left: 17rem;
-  }
-
-  #list2 .proj_list_container {
-    display: none;
-  }
-
-  #list4 .proj_list_container {
-    display: none;
+    margin-right: 1rem;
   }
 
   #list-5 .proj_list_container {
-    display: none;
-  }
-
-  #list-6 .proj_list_container {
-    display: none;
+    margin-top: -12rem;
+    height: 9rem;
+    margin-left: 1rem;
   }
 
   .backg_fin {
     width: 95%;
-    background:
-      url(img/image-geometry_5.svg),
-      url(img/image-geometry_yellow.svg);
+    margin-top: 2rem;
+    background: url(img/image-geometry_5.svg), url(img/image-geometry_yellow.svg);
     background-repeat: no-repeat;
   }
 
-  #list6 {
-    width: 40%;
+  .proj_view_btn:hover {
+    color: black;
+    background-color: white;
   }
 
   #About_sec {
@@ -828,9 +962,7 @@ textarea:focus {
   }
 
   .form_container {
-    background:
-      url(img/image-geometry_shapes1.svg) left top no-repeat,
-      url(img/image-geometry_shapes2.svg) right bottom no-repeat;
+    background: url(img/image-geometry_shapes1.svg) left top no-repeat, url(img/image-geometry_shapes2.svg) right bottom no-repeat;
     background-color: #f9f9fa;
   }
 

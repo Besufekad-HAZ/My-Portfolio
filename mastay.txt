@@ -1,0 +1,18 @@
+for (let j = 0; j < projects.length; j++) {
+  const proj = document.getElementById("works_name");
+  proj.innerHTML += `<div class="project_list" id="list-${j}">
+            <img class="proj_1st_image" src="${projects[j].image}" alt="1st project image"/>
+            <div class="proj_list_container">
+              <h4 class="proj_name">${projects[j].name}</h4>
+               <ul class="lang_list">
+                  ${for (let i = 0; i < projects[number].languages.length; i++) {
+    const li = document.createElement("li");
+    li.textContent = projects[number].languages[i];
+    list.appendChild(li); }}
+                </ul>
+              <button class="proj_view_btn" type="button" onclick="modal(0)">
+                See this Project <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>;
+}
